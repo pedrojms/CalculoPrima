@@ -1,0 +1,31 @@
+xml version=1.0
+ruleset xmlnsxsi=httpwww.w3.org2001XMLSchema-instance
+         name=PMD rules
+         xmlns=httppmd.sourceforge.netruleset2.0.0
+         xsischemaLocation=httppmd.sourceforge.netruleset2.0.0 httppmd.sourceforge.netruleset_2_0_0.xsd
+
+    descriptionCustom ruleset for 1mg Android applicationdescription
+
+    exclude-pattern.R.javaexclude-pattern
+    exclude-pattern.gen.exclude-pattern
+
+    rule ref=rulesetsjavaunnecessary.xml
+    rule ref=rulesetsjavaimports.xml
+        exclude name=TooManyStaticImports
+    rule
+    rule ref=rulesetsjavaunusedcode.xml
+    rule ref=rulesetsjavajunit.xml
+    rule ref=rulesetsjavalogging-java.xml
+    rule ref=rulesetsjavabraces.xml
+    rule ref=rulesetsjavastrings.xml
+    rule ref=rulesetsjavabasic.xml
+    rule ref=rulesetsjavadesign.xml
+        exclude name=ConfusingTernary
+    rule
+    rule ref=rulesetsjavatyperesolution.xml
+    rule ref=rulesetsjavaempty.xmlEmptyCatchBlock
+        properties
+            property name=allowCommentedBlocks value=true
+        properties
+    rule
+ruleset
