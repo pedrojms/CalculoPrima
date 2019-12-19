@@ -36,11 +36,7 @@ dependencies {
     options.addBooleanOption('html5', true)
 }*/
 
-
-
-
-
-pmd {
+/*pmd {
     consoleOutput= true
     ignoreFailures = false
     // sourceSets = [sourceSets.main]
@@ -48,7 +44,7 @@ pmd {
     ruleSets = [
             "java-naming",       
     ]
-}
+}*/
     
 /*apply plugin: 'findbugs'
 findbugs {
